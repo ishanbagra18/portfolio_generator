@@ -1,10 +1,12 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/Portfolio-Generator-6C63FF?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio Generator" height="50"/>
+<img src="ss3.png" alt="ProFolio Banner" width="100%"/>
 
-# 🚀 Portfolio Generator with OTP Authentication
+<br/><br/>
 
-**Transform your details into a stunning portfolio — in minutes.**
+# 🚀 ProFolio — Portfolio Generator with OTP Authentication
+
+**Sign up. Verify. Build your dream portfolio — in minutes.**
 
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
@@ -14,14 +16,14 @@
 
 <br/>
 
-![GitHub stars](https://img.shields.io/github/stars/yourusername/portfolio-generator?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/portfolio-generator?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/portfolio-generator?color=red)
-![License](https://img.shields.io/github/license/yourusername/portfolio-generator?color=blue)
+![GitHub stars](https://img.shields.io/github/stars/yourusername/profolio?style=social)
+![GitHub forks](https://img.shields.io/github/forks/yourusername/profolio?style=social)
+![GitHub issues](https://img.shields.io/github/issues/yourusername/profolio?color=red)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 <br/>
 
-> 🔐 **Secure** · ⚡ **Fast** · 🎨 **Beautiful** · 📱 **Responsive**
+> 🔐 **Passwordless Auth** &nbsp;·&nbsp; ⚡ **Instant Portfolio** &nbsp;·&nbsp; 🎨 **Dark Theme UI** &nbsp;·&nbsp; 📱 **Fully Responsive**
 
 </div>
 
@@ -30,7 +32,7 @@
 ## 📋 Table of Contents
 
 - [✨ Overview](#-overview)
-- [🔐 Authentication Flow](#-authentication-flow)
+- [📸 Screenshots](#-screenshots)
 - [🎯 Features](#-features)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [📁 Project Structure](#-project-structure)
@@ -39,7 +41,6 @@
 - [🚀 Running the App](#-running-the-app)
 - [📌 API Endpoints](#-api-endpoints)
 - [🌐 Portfolio Fields](#-portfolio-fields)
-- [📸 Screenshots](#-screenshots)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 
@@ -47,32 +48,107 @@
 
 ## ✨ Overview
 
-**Portfolio Generator** is a full-stack web application that allows users to register, authenticate via OTP (email or SMS), fill in their professional details, and instantly receive a beautifully generated portfolio website — all without writing a single line of code.
+**ProFolio** is a full-stack web application that lets users register, authenticate via OTP (email or SMS), fill in their professional details, and instantly generate a stunning personal portfolio website — no coding required.
 
 ```
-User Signs Up → Receives OTP → Logs In → Fills Profile → Gets Portfolio 🎉
+Sign Up → OTP Verification → Dashboard → Fill Details → Portfolio Generated! 🎉
 ```
 
 ---
 
-## 🔐 Authentication Flow
+## 📸 Screenshots
 
-```
-┌─────────────┐       ┌──────────────────┐       ┌──────────────────┐
-│   Sign Up   │──────▶│  OTP Delivered   │──────▶│    Dashboard     │
-│ Email/Phone │       │  📧 Email or     │       │  Build Portfolio │
-└─────────────┘       │  📱 SMS (Twilio) │       └──────────────────┘
-                       └──────────────────┘
-```
+### 🔐 Authentication
 
-| Method | Provider | Delivery Time |
-|--------|----------|--------------|
-| 📧 Email OTP | Nodemailer (SMTP/Gmail) | < 30 seconds |
-| 📱 SMS OTP | Twilio | < 10 seconds |
+<table>
+  <tr>
+    <td align="center"><b>Login Page</b></td>
+    <td align="center"><b>OTP Verification</b></td>
+  </tr>
+  <tr>
+    <td><img src="ss1.png" alt="Login Page" width="100%"/></td>
+    <td><img src="ss2.png" alt="OTP Verification" width="100%"/></td>
+  </tr>
+</table>
 
-- OTPs are **time-limited** (expire in 5–10 minutes)
-- Each OTP is **single-use** — invalidated after verification
-- No passwords stored — completely **passwordless auth**
+---
+
+### 🏠 Dashboard & Portfolio Builder
+
+<table>
+  <tr>
+    <td align="center"><b>Welcome Dashboard</b></td>
+    <td align="center"><b>Fill Portfolio Details</b></td>
+  </tr>
+  <tr>
+    <td><img src="ss3.png" alt="Dashboard" width="100%"/></td>
+    <td><img src="ss4.png" alt="Portfolio Form" width="100%"/></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td align="center"><b>AI Features Overview</b></td>
+    <td align="center"><b>Competitive Programming Profiles</b></td>
+  </tr>
+  <tr>
+    <td><img src="ss5.png" alt="Features" width="100%"/></td>
+    <td><img src="ss6.png" alt="Coding Profiles" width="100%"/></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td align="center" colspan="2"><b>Portfolio Saved Successfully ✅</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><img src="ss7.png" alt="Portfolio Saved" width="70%"/></td>
+  </tr>
+</table>
+
+---
+
+### 🎨 Generated Portfolio Output
+
+<table>
+  <tr>
+    <td align="center" colspan="2"><b>Hero Section</b></td>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="ss8.png" alt="Portfolio Hero" width="100%"/></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td align="center"><b>About Me</b></td>
+    <td align="center"><b>My Skills</b></td>
+  </tr>
+  <tr>
+    <td><img src="ss9.png" alt="About Me Section" width="100%"/></td>
+    <td><img src="ss10.png" alt="Skills Section" width="100%"/></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td align="center"><b>Education & Projects</b></td>
+    <td align="center"><b>Competitive Coding Profiles</b></td>
+  </tr>
+  <tr>
+    <td><img src="ss11.png" alt="Education & Projects" width="100%"/></td>
+    <td><img src="ss12.png" alt="Coding Profiles Portfolio" width="100%"/></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td align="center" colspan="2"><b>Contact Section</b></td>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="ss13.png" alt="Contact Section" width="100%"/></td>
+  </tr>
+</table>
 
 ---
 
@@ -80,23 +156,29 @@ User Signs Up → Receives OTP → Logs In → Fills Profile → Gets Portfolio 
 
 ### 🔑 Authentication
 - ✅ Sign up with **email** or **phone number**
-- ✅ Login via **OTP** — no password needed
+- ✅ Passwordless login via **5-digit OTP**
 - ✅ OTP delivery via **Nodemailer** (email) and **Twilio** (SMS)
-- ✅ OTP expiry and rate limiting
-- ✅ Secure session management with **JWT**
+- ✅ OTP auto-expires and is single-use
+- ✅ Secure sessions with **JWT**
 
 ### 🧑‍💼 Portfolio Builder
-- ✅ Collects comprehensive professional data
-- ✅ Automatically generates a **personalized portfolio website**
-- ✅ Fully responsive and mobile-friendly output
-- ✅ Multiple portfolio **themes/templates**
-- ✅ Shareable public portfolio URL
+- ✅ Personal Info — Name, Age, Email, Phone, Address, Language
+- ✅ Skills with **animated circular progress indicators**
+- ✅ Education timeline (School → College → University)
+- ✅ Projects with GitHub repository links
+- ✅ Competitive Programming — LeetCode & CodeChef ratings
+- ✅ Contact form with social links (GitHub, LinkedIn, Instagram, Email)
+- ✅ Beautiful **dark-themed generated portfolio**
 
-### 🛡️ Security
-- ✅ OTP hashed before storing in DB
-- ✅ JWT-based protected routes
-- ✅ Input validation and sanitization
-- ✅ Rate limiting on OTP requests
+### 🤖 AI-Powered Capabilities
+- ✅ Instant Portfolio Creation
+- ✅ Customizable Templates
+- ✅ AI-Optimized Content Suggestions
+- ✅ Easy File Integration
+- ✅ SEO & Visibility Boost
+- ✅ Auto-Save & Backup
+- ✅ Analytics & Insights
+- ✅ Multi-Device Access
 
 ---
 
@@ -106,8 +188,8 @@ User Signs Up → Receives OTP → Logs In → Fills Profile → Gets Portfolio 
 | Technology | Purpose |
 |-----------|---------|
 | HTML5 / CSS3 | Markup & Styling |
-| JavaScript (ES6+) | Client-side logic |
-| *(React — optional)* | Component-based UI |
+| JavaScript (ES6+) | Client-side interactivity |
+| React / Vite | Component-based UI |
 
 ### Backend
 | Technology | Purpose |
@@ -115,65 +197,62 @@ User Signs Up → Receives OTP → Logs In → Fills Profile → Gets Portfolio 
 | **Node.js** | Runtime environment |
 | **Express.js** | Web framework & REST API |
 | **JWT** | Secure session tokens |
-| **bcrypt** | OTP hashing |
 
 ### OTP / Messaging
 | Service | Purpose |
 |--------|---------|
-| **Nodemailer** | Email OTP delivery (SMTP/Gmail) |
-| **Twilio** | SMS OTP delivery |
+| **Nodemailer** | Email OTP via Gmail SMTP |
+| **Twilio** | SMS OTP |
 
 ### Database
 | Technology | Purpose |
 |-----------|---------|
-| **MongoDB** | User data & session storage |
-| **Mongoose** | ODM for schema modeling |
+| **MongoDB** | User data, sessions, portfolios |
+| **Mongoose** | ODM & schema modeling |
 
 ---
 
 ## 📁 Project Structure
 
 ```
-portfolio-generator/
+profolio/
 │
 ├── 📂 backend/
 │   ├── 📂 config/
-│   │   ├── db.js              # MongoDB connection
-│   │   └── nodemailer.js      # Email transport setup
-│   │
+│   │   ├── db.js                  # MongoDB connection
+│   │   └── nodemailer.js          # Email transport setup
 │   ├── 📂 controllers/
-│   │   ├── authController.js  # Signup, login, OTP logic
-│   │   └── portfolioController.js
-│   │
+│   │   ├── authController.js      # Signup, OTP send/verify
+│   │   └── portfolioController.js # Create, update, fetch portfolio
 │   ├── 📂 middleware/
-│   │   ├── authMiddleware.js  # JWT verification
-│   │   └── rateLimiter.js     # OTP rate limiting
-│   │
+│   │   ├── authMiddleware.js      # JWT verification
+│   │   └── rateLimiter.js         # OTP rate limiting
 │   ├── 📂 models/
-│   │   ├── User.js            # User schema
-│   │   ├── OTP.js             # OTP schema
-│   │   └── Portfolio.js       # Portfolio schema
-│   │
+│   │   ├── User.js                # User schema
+│   │   ├── OTP.js                 # OTP schema (hashed + expiry)
+│   │   └── Portfolio.js           # Full portfolio schema
 │   ├── 📂 routes/
-│   │   ├── authRoutes.js      # /api/auth/*
-│   │   └── portfolioRoutes.js # /api/portfolio/*
-│   │
+│   │   ├── authRoutes.js          # /api/auth/*
+│   │   └── portfolioRoutes.js     # /api/portfolio/*
 │   ├── 📂 services/
-│   │   ├── emailService.js    # Nodemailer OTP email
-│   │   └── smsService.js      # Twilio OTP SMS
-│   │
-│   ├── .env                   # Environment variables
-│   ├── server.js              # Entry point
+│   │   ├── emailService.js        # Nodemailer OTP sender
+│   │   └── smsService.js          # Twilio OTP sender
+│   ├── .env
+│   ├── server.js
 │   └── package.json
 │
 ├── 📂 frontend/
-│   ├── 📂 public/
 │   ├── 📂 src/
-│   │   ├── index.html
-│   │   ├── login.html
-│   │   ├── signup.html
-│   │   └── dashboard.html
-│   └── 📂 assets/
+│   │   ├── 📂 pages/
+│   │   │   ├── Login.jsx
+│   │   │   ├── OTPVerify.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── PortfolioForm.jsx
+│   │   │   └── Portfolio.jsx      # Generated portfolio output
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── vite.config.js
+│   └── package.json
 │
 └── README.md
 ```
@@ -184,18 +263,16 @@ portfolio-generator/
 
 ### Prerequisites
 
-Make sure you have the following installed:
-
 - [Node.js](https://nodejs.org/) v16+
 - [MongoDB](https://www.mongodb.com/) (local or Atlas)
-- A [Twilio](https://www.twilio.com/) account *(for SMS OTP)*
-- A Gmail or SMTP account *(for email OTP)*
+- [Twilio](https://www.twilio.com/) account
+- Gmail / SMTP credentials
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/portfolio-generator.git
-cd portfolio-generator
+git clone https://github.com/yourusername/profolio.git
+cd profolio
 ```
 
 ### 2. Install Dependencies
@@ -205,7 +282,7 @@ cd portfolio-generator
 cd backend
 npm install
 
-# Frontend (if React-based)
+# Frontend
 cd ../frontend
 npm install
 ```
@@ -214,7 +291,7 @@ npm install
 
 ## 🔧 Configuration
 
-Create a `.env` file in the `/backend` directory:
+Create a `.env` file in `/backend`:
 
 ```env
 # ── Server ───────────────────────────────────────
@@ -222,7 +299,7 @@ PORT=5000
 NODE_ENV=development
 
 # ── Database ─────────────────────────────────────
-MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/portfolio_db
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/profolio_db
 
 # ── JWT ──────────────────────────────────────────
 JWT_SECRET=your_super_secret_jwt_key
@@ -230,12 +307,13 @@ JWT_EXPIRES_IN=7d
 
 # ── OTP Settings ─────────────────────────────────
 OTP_EXPIRY_MINUTES=10
+OTP_LENGTH=5
 
 # ── Nodemailer (Email OTP) ────────────────────────
 EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
 EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_app_password        # Use Gmail App Password
+EMAIL_PASS=your_gmail_app_password
 
 # ── Twilio (SMS OTP) ─────────────────────────────
 TWILIO_ACCOUNT_SID=ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -243,73 +321,61 @@ TWILIO_AUTH_TOKEN=your_twilio_auth_token
 TWILIO_PHONE_NUMBER=+1234567890
 ```
 
-> ⚠️ **Never commit your `.env` file.** Add it to `.gitignore`.
+> ⚠️ Never commit `.env` to Git — add it to `.gitignore`.
 
 ---
 
 ## 🚀 Running the App
 
-### Development Mode
-
 ```bash
-# Start backend
+# Terminal 1 — Backend (http://localhost:5000)
 cd backend
-npm run dev        # Uses nodemon for hot-reload
+npm run dev
 
-# Start frontend (in a separate terminal)
+# Terminal 2 — Frontend (http://localhost:5173)
 cd frontend
-npm start
+npm run dev
 ```
-
-### Production Mode
-
-```bash
-cd backend
-npm start
-```
-
-The app will run at: **`http://localhost:5000`**
 
 ---
 
 ## 📌 API Endpoints
 
-### 🔐 Auth Routes — `/api/auth`
+### 🔐 Auth — `/api/auth`
 
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
 | `POST` | `/signup` | Register with email or phone | ❌ |
-| `POST` | `/send-otp` | Send OTP to email or phone | ❌ |
+| `POST` | `/send-otp` | Send OTP via email or SMS | ❌ |
 | `POST` | `/verify-otp` | Verify OTP & receive JWT | ❌ |
-| `GET` | `/logout` | Invalidate current session | ✅ |
+| `GET` | `/logout` | Invalidate session | ✅ |
 
-### 🧑‍💼 Portfolio Routes — `/api/portfolio`
+### 🧑‍💼 Portfolio — `/api/portfolio`
 
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
 | `POST` | `/create` | Submit portfolio details | ✅ |
-| `GET` | `/:username` | Get public portfolio | ❌ |
-| `PUT` | `/update` | Update portfolio details | ✅ |
+| `GET` | `/:username` | Fetch generated portfolio | ❌ |
+| `PUT` | `/update` | Update portfolio | ✅ |
 | `DELETE` | `/delete` | Delete portfolio | ✅ |
 
-### Example — Send OTP
+### Example — Verify OTP
 
 ```bash
-POST /api/auth/send-otp
+POST /api/auth/verify-otp
 Content-Type: application/json
 
 {
-  "contact": "user@example.com",   # or phone: "+919876543210"
-  "method": "email"                # or "sms"
+  "contact": "user@example.com",
+  "otp": "49961"
 }
 ```
 
-**Response:**
 ```json
 {
   "success": true,
-  "message": "OTP sent successfully",
-  "expiresIn": "10 minutes"
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "user": { "id": "64abc...", "email": "user@example.com" }
 }
 ```
 
@@ -317,109 +383,74 @@ Content-Type: application/json
 
 ## 🌐 Portfolio Fields
 
-When building a portfolio, the following data is collected:
-
 ```json
 {
+  "portfolioName": "My Portfolio",
   "personalInfo": {
-    "fullName": "Jane Doe",
-    "title": "Full Stack Developer",
-    "bio": "Passionate developer with 3 years of experience...",
-    "avatar": "https://link-to-photo.com/photo.jpg",
-    "location": "Mumbai, India"
+    "name": "Ishan Bagra",
+    "age": 20,
+    "email": "ishanbagra18@gmail.com",
+    "phone": "6377253179",
+    "address": "A-116 Kardhani, Jaipur, Rajasthan"
   },
-  "contact": {
-    "email": "jane@example.com",
-    "phone": "+91-9876543210",
-    "linkedin": "https://linkedin.com/in/janedoe",
-    "github": "https://github.com/janedoe",
-    "website": "https://janedoe.dev"
-  },
-  "skills": ["JavaScript", "Node.js", "React", "MongoDB", "Docker"],
-  "projects": [
-    {
-      "title": "Portfolio Generator",
-      "description": "An OTP-based portfolio builder...",
-      "techStack": ["Node.js", "Express", "MongoDB"],
-      "liveUrl": "https://demo.com",
-      "githubUrl": "https://github.com/user/repo"
-    }
+  "skills": [
+    { "name": "JavaScript", "level": 89 },
+    { "name": "Node.js",    "level": 75 },
+    { "name": "React.js",   "level": 80 },
+    { "name": "HTML",       "level": 90 },
+    { "name": "CSS",        "level": 70 },
+    { "name": "Angular",    "level": 65 }
   ],
   "education": [
-    {
-      "degree": "B.Tech in Computer Science",
-      "institution": "IIT Bombay",
-      "year": "2020–2024",
-      "grade": "8.9 CGPA"
-    }
+    { "degree": "B.Tech", "institution": "IIIT Kota", "year": "2022 - Present" },
+    { "degree": "College", "institution": "iiitkota",  "year": "2020 - 2022"   },
+    { "degree": "School",  "institution": "St Teresa", "year": "2008 - 2020"   }
   ],
-  "experience": [
-    {
-      "company": "TechCorp",
-      "role": "Backend Developer",
-      "duration": "June 2024 – Present",
-      "description": "Built RESTful APIs serving 100k+ users..."
-    }
+  "projects": [
+    { "title": "Skylink",       "description": "Real-time in-flight communication system", "githubUrl": "..." },
+    { "title": "Love-Advisor",  "description": "AI chatbot to resolve interpersonal conflicts", "githubUrl": "..." },
+    { "title": "Dicegame",      "description": "A predictable dice game for timepass", "githubUrl": "..." }
   ],
-  "achievements": ["Hackathon Winner 2023", "Open Source Contributor"],
-  "languages": ["English", "Hindi", "Gujarati"],
-  "certifications": [
-    {
-      "name": "AWS Certified Developer",
-      "issuer": "Amazon",
-      "year": "2023"
-    }
-  ]
+  "competitiveProgramming": {
+    "leetcode":  { "profile": "https://leetcode.com/u/ishanbagra/",       "rating": 1518 },
+    "codechef":  { "profile": "https://www.codechef.com/START141D",       "rating": 1489 }
+  },
+  "contact": {
+    "github": "https://github.com/...",
+    "linkedin": "https://linkedin.com/in/...",
+    "instagram": "https://instagram.com/...",
+    "email": "ishanbagra18@gmail.com"
+  }
 }
 ```
 
 ---
 
-## 📸 Screenshots
-
-> 📷 *(Add your actual screenshots by replacing the placeholders below)*
-
-| Signup Page | OTP Verification | Portfolio Dashboard |
-|:-----------:|:----------------:|:-------------------:|
-| ![Signup](https://via.placeholder.com/300x200?text=Signup+Page) | ![OTP](https://via.placeholder.com/300x200?text=OTP+Verification) | ![Dashboard](https://via.placeholder.com/300x200?text=Dashboard) |
-
-| Portfolio Builder | Generated Portfolio |
-|:-----------------:|:-------------------:|
-| ![Builder](https://via.placeholder.com/400x220?text=Portfolio+Builder) | ![Portfolio](https://via.placeholder.com/400x220?text=Generated+Portfolio) |
-
----
-
 ## 🤝 Contributing
 
-Contributions are welcome and appreciated! 🙌
-
 ```bash
-# 1. Fork the repository
+# 1. Fork this repo
 # 2. Create your feature branch
-git checkout -b feature/amazing-feature
+git checkout -b feature/your-feature
 
-# 3. Commit your changes
-git commit -m "feat: add amazing feature"
+# 3. Commit (Conventional Commits style)
+git commit -m "feat: add your feature"
 
-# 4. Push to the branch
-git push origin feature/amazing-feature
-
-# 5. Open a Pull Request
+# 4. Push & open a Pull Request
+git push origin feature/your-feature
 ```
-
-Please follow the [Conventional Commits](https://www.conventionalcommits.org/) standard for commit messages.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+Licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
 
 ---
 
 <div align="center">
 
-Made with ❤️ by [Your Name](https://github.com/yourusername)
+Built with ❤️ by [Ishan Bagra](https://github.com/yourusername)
 
 ⭐ **Star this repo if you found it helpful!** ⭐
 
